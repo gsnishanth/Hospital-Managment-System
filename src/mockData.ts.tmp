@@ -1,0 +1,12 @@
+import { Patient, Doctor, Appointment, Feedback, Bill } from './types';
+
+export const MOCK_DOCTORS: Doctor[] = [
+  { id: 'd1', name: 'Dr. Rajesh Kumar', specialization: 'Cardiology', experience: 12, contact: '98765-43210', email: 'rajesh.k@hospital.in' },
+  { id: 'd2', name: 'Dr. Priya Sharma', specialization: 'Neurology', experience: 8, contact: '98765-43211', email: 'priya.s@hospital.in' },
+// ...
+];
+
+export const MOCK_PATIENTS: Patient[] = [
+  { id: 'p1', name: 'Arjun Mehta', age: 45, gender: 'Male', phone: '91234-56780', disease: 'Hypertension', assignedDoctorId: 'd1', createdAt: new Date().toISOString(), email: 'arjun@example.com' },
+// ...
+];
